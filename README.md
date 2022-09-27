@@ -25,51 +25,60 @@
 
 ## Start
 
-- **Before deploy**
+- #### Before deploy
 
-  ```bash
-  $ cp terraform.example.tfvars terraform.tfvars
-  ```
+  - **Copy .tfvars file**
 
-- **Check Configuration**
+    ```bash
+    $ cp terraform.example.tfvars terraform.tfvars
+    ```
+
+  - **terraform init**
+
+    ```bash
+    $ terraform init
+    ```
+
+- #### Check Configuration
 
   ```bash
   $ terraform plan
   ```
 
-- **Deploy**
+- #### Deploy
 
   ```bash
   $ terraform apply
   ```
 
-- **Destroy**
+- #### Destroy
 
   ```bash
   $ terraform destroy
   ```
 
-- **Deploy specific resource**
+- #### Deploy specific resource
 
   ```bash
   # terraform apply <resource>.<name>
   $ terraform apply aws_instance.terraform_ec2
   ```
 
-- **Destroy specific resource**
+- #### Destroy specific resource
 
   ```bash
   # terraform destroy <resource>.<name>
   $ terraform destroy aws_instance.terraform_ec2
   ```
 
-- **List all resource state**
+- #### List all resource state
 
   ```bash
   $ terraform state list
   ```
 
-- **List specific resource detail**
+- #### List specific resource detail
+
   ```bash
   # terraform state show <resource>.<name>
   $ terraform state show aws_instance.terraform_ec2
