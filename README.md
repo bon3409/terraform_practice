@@ -84,6 +84,13 @@
   $ terraform state show aws_instance.terraform_ec2
   ```
 
+## Terraform Cloud
+
+Any pushes to the **main branch** of your repository will trigger Terraform runs in your workspace
+
+1. Need to set organization variable
+2. Need to set workspace variable
+
 ## Reference
 
 - [Terraform Course - Automate your AWS cloud infrastructure](https://www.youtube.com/watch?v=SLB_c_ayRMo)
