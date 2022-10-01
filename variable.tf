@@ -1,3 +1,13 @@
+variable "organization" {
+  type        = string
+  description = "This is Terraform Cloud organization"
+}
+
+variable "workspace" {
+  type        = string
+  description = "This is Terraform Cloud workspace name"
+}
+
 variable "region" {
   type        = string
   description = "This is AWS service deploy region"
