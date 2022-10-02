@@ -20,12 +20,12 @@ variable "availability_zone" {
   default     = "us-east-1a"
 }
 
-variable "access_key" {
+variable "AWS_ACCESS_KEY_ID" {
   type        = string
   description = "AWS access key"
 }
 
-variable "secret_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
   type        = string
   description = "AWS secret key"
 }
