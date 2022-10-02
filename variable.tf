@@ -11,13 +11,13 @@ variable "workspace" {
 variable "region" {
   type        = string
   description = "This is AWS service deploy region"
-  default     = "us-east-1"
+  default     = "ap-northeast-1"
 }
 
 variable "availability_zone" {
   type        = string
   description = "This is AWS service deploy AZ"
-  default     = "us-east-1a"
+  default     = "ap-northeast-1a"
 }
 
 variable "AWS_ACCESS_KEY_ID" {
